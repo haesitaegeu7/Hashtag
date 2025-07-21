@@ -10,9 +10,9 @@ const peopleData = [
 ];
 
 const partnerData = [
-  { name: 'ReframePoint', imageUrl: '/logos/rp.jpeg' },
-  { name: 'I am', imageUrl: '/logos/iam.jpeg' },
-  { name: '나무심는사람', imageUrl: '/logos/tree.jpeg' },
+  { name: 'ReframePoint', imageUrl: '/logos/reframe.png' },
+  { name: 'I am', imageUrl: '/logos/iam.png' },
+  { name: '나무심는사람', imageUrl: '/logos/tree.png' },
 ];
 
 // --- 컴포넌트 정의 ---
