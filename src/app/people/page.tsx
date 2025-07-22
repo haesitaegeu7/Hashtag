@@ -36,13 +36,13 @@ const ProfileCard = ({ name, title, imageUrl }: { name: string; title: string; i
 
 const PartnerCard = ({ name, imageUrl }: { name: string; imageUrl: string }) => {
   return (
-    <div className="bg-gray-100/80 rounded-2xl aspect-square w-full sm:w-64 md:w-72 flex items-center justify-center p-8">
+    <div className="bg-gray-100/80 rounded-2xl aspect-square w-full sm:w-30 md:w-30 flex items-center justify-center p-8">
       <Image
         src={imageUrl}
         alt={`${name} 로고`}
-        width={200}
-        height={200}
-        className="object-contain w-full h-auto"
+        width={100}
+        height={150}
+        className="object-contain"
       />
     </div>
   );
@@ -95,7 +95,7 @@ export default function PeoplePage() {
             <br />
             PARTNER
           </h1>
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             {partnerData.map((partner) => (
               <PartnerCard key={partner.name} name={partner.name} imageUrl={partner.imageUrl} />
             ))}
